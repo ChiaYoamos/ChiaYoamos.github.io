@@ -1,4 +1,3 @@
-
 function submitName(e) {
     if (e.code === 'Enter') {
         func();
@@ -7,7 +6,6 @@ function submitName(e) {
 function hint(){
     alert("=是可以再取代的");
 }
-
 
 function func(){
     var ans = parseInt(document.getElementById('ans').value);
@@ -18,7 +16,7 @@ function func(){
 
     if (ans == a){
         document.getElementById('bool').textContent = "  "+ans+ " is Right";
-        setTimeout("location.href='Level2.html'",3000);
+        setTimeout("location.href='/Level2.html'",3000);
     }
     else{
         document.getElementById('bool').textContent = "  "+ans+ " is Wrong";

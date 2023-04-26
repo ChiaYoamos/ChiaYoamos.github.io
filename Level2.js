@@ -16,7 +16,7 @@ function func(){
         if (ans < 200){
             if (ans * 2 == 362){
                 document.getElementById('bool').textContent = "  "+ans+" is Right";
-                setTimeout("location.href='Level3.html'",3000);
+                setTimeout("location.href='/Level3.html'",3000);
             }
             else{
                 document.getElementById('bool').textContent = "  "+ans+" is Wrong";

@@ -9,6 +9,7 @@ function hint(){
 
 
 
+
 function func(){
     var ans = parseInt(document.getElementById('ans').value);
     var show = ans;
@@ -17,7 +18,7 @@ function func(){
     } 
     if (show == 50){
         document.getElementById('bool').textContent = "  "+ans+" is Right";
-        setTimeout("location.href='LevelFinish.html'",3000);
+        setTimeout("location.href='/Level4.html'",3000);
     }
     else{
         document.getElementById('bool').textContent = "  "+ans+" is Wrong";
