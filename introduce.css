@@ -23,7 +23,7 @@ h1{
     height: auto; /* 設置高度 */
     line-height: 200%; /* 文字行高 */
 }
-p {
+.box p {
     display: block;
     margin-block-start: 2%;
     margin-block-end: 2%;
