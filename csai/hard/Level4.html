@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>關卡4</title>
+    <link rel="stylesheet" href="Level.css">
+    <script src="Level4.js"></script>
+</head>
+
+<body>
+    
+    <div class="bg">
+        <div class="picbg">
+            <div class="pic">
+                <div class="mar"></div>
+                <img src="/pic/4-1.png"  style="display:block; margin:auto;">
+                <div class="mar"></div>
+                <form>
+                    請輸入數字 x：<input type="text"  id="ansx" onkeypress="return submitName(event);" autocomplete="off">
+                </form>
+                <form>
+                    請輸入數字 y：<input type="text"  id="ansy" onkeypress="return submitName(event);" autocomplete="off">
+                    <input id="hiddenText" type="text" style="display:none" />
+                </form>
+                <div class="mar"></div>
+                <p><button onclick="func()" >確認</button><button onclick="hint()" >提示</button>  答案:<em id='bool'></em></p>
+                
+                
+            </div>
+           
+        </div>
+        
+        <section id="linktree">
+                <div class="home">
+                    
+                    <a href="/home.html"style="text-decoration:none;">Level 4</a>
+        
+                </div>
+        </section>
+
+    </div>
+
+</body>
+
+</html>

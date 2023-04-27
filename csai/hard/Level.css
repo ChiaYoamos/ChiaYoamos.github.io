@@ -1,0 +1,68 @@
+.bg{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top ,#6E85B7,#C4D7E0  );
+    
+}
+#linktree a {
+    position: relative;
+    display: flex;
+    margin: 0px;
+    border: 0px;
+    left: 3vw;
+    top: 3vw;
+    text-align: center;
+    color: #212A3E;
+    font-size: 4vmax;
+
+}
+form{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    font-size: 1.5vw;
+}
+button {
+  width: 3vw;
+  height: 2vw;
+  font-size: 2%;
+
+}
+.picbg{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    /* 水平置中 */
+    justify-content: center;    
+    /* 垂直置中 */
+    align-content: center;      
+    flex-wrap: wrap;
+}
+.pic{
+    margin: 0px;
+}
+.mar{
+    margin-top: 15px;
+}
+img{
+    border-radius: 8px;
+    width: 33vw;
+    height: 23vw;
+}
+#bool{
+    font-size: 2em;
+}
