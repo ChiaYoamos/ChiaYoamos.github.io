@@ -13,16 +13,27 @@ function hint(){
 function func(){
     var ans = parseInt(document.getElementById('ans').value);
     var show = ans;
+    var flag = false;
     for(var i=0;i<10;i++){
         show+=3;
     } 
     if (show == 50){
-        document.getElementById('bool').textContent = "  "+ans+" is Right";
+        flag = true;
+    }
+    
+    if (flag == true){
+        document.getElementById('bool').style.color = " #6ECCAF";
+        document.getElementById('bool').style.font = "100%";
+        document.getElementById('bool').textContent ="  "+ans+ " is Right";
+        
         setTimeout("location.href='/Level4.html'",3000);
     }
     else{
-        document.getElementById('bool').textContent = "  "+ans+" is Wrong";
+        document.getElementById('bool').style.color = " #D21312";
+        document.getElementById('bool').style.font = "100%";
+        document.getElementById('bool').textContent = "  "+ans+ " is Wrong";
     }
     document.getElementById('ans').value = "";
+
     
   }

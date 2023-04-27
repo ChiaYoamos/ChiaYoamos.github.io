@@ -13,12 +13,20 @@ function func(){
     a=2;
     a=4;
     a=a+2;
-
-    if (ans == a){
-        document.getElementById('bool').textContent = "  "+ans+ " is Right";
+    var flag =false;
+    if(ans == a){
+        flag = true;
+    }
+    if (flag == true){
+        document.getElementById('bool').style.color = " #6ECCAF";
+        document.getElementById('bool').style.font = "100%";
+        document.getElementById('bool').textContent ="  "+ans+ " is Right";
+        
         setTimeout("location.href='/Level2.html'",3000);
     }
     else{
+        document.getElementById('bool').style.color = " #D21312";
+        document.getElementById('bool').style.font = "100%";
         document.getElementById('bool').textContent = "  "+ans+ " is Wrong";
     }
     document.getElementById('ans').value = "";

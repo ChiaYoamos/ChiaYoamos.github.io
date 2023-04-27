@@ -12,22 +12,26 @@ function hint(){
 
 function func(){
     var ans = parseInt(document.getElementById('ans').value);
+    var flag =false;
     if (ans > 100){
         if (ans < 200){
             if (ans * 2 == 362){
-                document.getElementById('bool').textContent = "  "+ans+" is Right";
-                setTimeout("location.href='/Level3.html'",3000);
-            }
-            else{
-                document.getElementById('bool').textContent = "  "+ans+" is Wrong";
-            }
-        }
-        else{
-            document.getElementById('bool').textContent = "  "+ans+" is Wrong";
+                flag = true;
+            }   
         }
     }
+    
+    if (flag == true){
+        document.getElementById('bool').style.color = " #6ECCAF";
+        document.getElementById('bool').style.font = "100%";
+        document.getElementById('bool').textContent ="  "+ans+ " is Right";
+        
+        setTimeout("location.href='/Level3.html'",3000);
+    }
     else{
-        document.getElementById('bool').textContent = "  "+ans+" is Wrong";
+        document.getElementById('bool').style.color = " #D21312";
+        document.getElementById('bool').style.font = "100%";
+        document.getElementById('bool').textContent = "  "+ans+ " is Wrong";
     }
     document.getElementById('ans').value = "";
   }

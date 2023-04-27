@@ -13,38 +13,41 @@ function func(){
     var x=ansx;
     var y=ansy;
     var ans=0;
-    if(ansy == NaN||ansx==NaN){
-        document.getElementById('bool').textContent = "  "+x+" and "+y+" is 錯誤 , Your answer is " + ans;
-        document.getElementById('ans').value = "";
+    var flag = false;
+    
+    if (ansx >= ansy){
+        for(var i=0;i<10;i++){
+            ansx+=3
+            for(var j=0;j<10;j++){
+                ansx+=3
+            }
+        }
+        ans = ansx+ansy
+    } 
+
+    else {
+        for(var i=0;i<10;i++){
+            ansy+=4
+        }
+        ansx=1000-ansy-40
+        ansy=ansy+40
+        ans = ansx+ansy
+    }
+    if(ans==1000){
+        flag=true
+    }
+    if (flag == true){
+        document.getElementById('bool').style.color = " #6ECCAF";
+        document.getElementById('bool').style.font = "100%";
+        document.getElementById('bool').textContent ="  "+ans+ " is Right";
+        
+        setTimeout("location.href='/LevelFinish.html'",3000);
     }
     else{
-        if (ansx >= ansy){
-            for(var i=0;i<10;i++){
-                ansx+=3
-                for(var j=0;j<10;j++){
-                    ansx+=3
-                }
-            }
-            ans = ansx+ansy
-        } 
-    
-        else {
-            for(var i=0;i<10;i++){
-                ansy+=4
-            }
-            ansx=1000-ansy-40
-            ansy=ansy+40
-            ans = ansx+ansy
-        }
-        if(ans==1000){
-            document.getElementById('bool').textContent = "  "+x+" and "+y+" is Right";
-            setTimeout("location.href='/LevelFinish.html'",3000);
-        }
-        else{
-            document.getElementById('bool').textContent = "  "+x+" and "+y+" is Wrong , Your answer is " + ans;
-        }
-        document.getElementById('ans').value = "";
-        
+        document.getElementById('bool').style.color = " #D21312";
+        document.getElementById('bool').style.font = "100%";
+        document.getElementById('bool').textContent = "  "+ans+ " is Wrong";
     }
+        document.getElementById('ans').value = "";
     
   }

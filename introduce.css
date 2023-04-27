@@ -7,9 +7,9 @@
     width: 60%;
     height: 50%;
     display: flex;  
-  /* 垂直置中 */
-  align-items: center; 
-  flex-wrap: wrap;
+    /* 垂直置中 */
+    align-items: center; 
+    flex-wrap: wrap;
 }
 h1{
     width: 100%;
