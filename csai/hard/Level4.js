@@ -41,7 +41,7 @@ function func(){
         document.getElementById('bool').style.font = "100%";
         document.getElementById('bool').textContent ="  "+ans+ " is Right";
         
-        setTimeout("location.href='/hard/LevelFinish.html'",3000);
+        setTimeout("location.href='LevelFinish.html'",3000);
     }
     else{
         document.getElementById('bool').style.color = " #D21312";
