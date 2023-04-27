@@ -1,0 +1,17 @@
+
+.allbox{
+    width: 60vw;
+    height: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.iLevel{
+    display: flex;
+    width: 60vw;
+    align-items: center;
+    margin: 1.5vmax;
+    justify-content: center;
+}

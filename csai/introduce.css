@@ -1,0 +1,43 @@
+.iLevel{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+h1{
+    color: #212A3E;
+    font-size: 4vw;
+    margin: 0;
+}
+#about{
+    color: #212A3E;
+    font-size: 2vw;
+    margin: 0;
+}
+.allbox{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.box{
+    border:3px  #212A3E solid;
+    width: 20vw;
+    align-items: center;
+    height: 15vw; /* 設置高度 */
+}
+h2{
+    font-size: 2vw;
+    margin-left: 1vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+p{
+    font-size: 1.2vw;
+    margin-left: 1vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
