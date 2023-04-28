@@ -6,10 +6,7 @@
     justify-content: center;
     align-items: center;
 }
-h1{
-    margin: 0.5vw;
-    font-size: 6vmax;
-}
 .Level{
-    margin: 1vmax;
+    margin: 1vw;
+    font-family: "Helvetica Neue", Courier, monospace;
 }
